@@ -6,7 +6,7 @@ public class Monster {
     private final int x, y;
     Random r = new Random();
 
-    Monster(int sizeBoard){
+    Monster(int sizeBoard) {
         this.y = r.nextInt(sizeBoard - 1);
         this.x = r.nextInt(sizeBoard);
     }
@@ -23,7 +23,7 @@ public class Monster {
         return x;
     }
 
-    public boolean conflictPerson(int perX, int perY){
+    public boolean conflictPerson(int perX, int perY) {
         return perY - 1 == this.y && perX - 1 == this.x;
     }
 
@@ -31,19 +31,20 @@ public class Monster {
         this.image = image;
     }
 
-    public boolean taskMonster(int difficultGame){
+    public boolean taskMonster(int difficultGame) {
         System.out.println("Решите задачу:");
-        int x = r.nextInt(100);
-        int y = r.nextInt(100);
-        int trueAnswer = x + y;
-        System.out.println("Реши пример: " + x + " + " + y + " = ?");
+        int a = r.nextInt(100);
+        int b = r.nextInt(100);
+        int trueAnswer = a + b;
+        System.out.println("Реши пример: " + a + " + " + b + " = ?");
         Scanner sc = new Scanner(System.in);
         int ans = sc.nextInt();
         if (trueAnswer == ans) {
             System.out.println("Верно! Ты победил монстра");
             return true;
+        } else {
+            System.out.println("Ты проиграл эту битву!");
+            return false;
         }
-        System.out.println("Ты проиграл эту битву!");
-        return false;
     }
 }

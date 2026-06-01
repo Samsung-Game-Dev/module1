@@ -3,12 +3,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         String castle = "\uD83C\uDFF0";
         int sizeBoard = 5;
 
         Person person = new Person(sizeBoard);
-
 
         int step = 0;
 
@@ -18,7 +16,6 @@ public class Main {
                 board[y][x] = "  ";
             }
         }
-
 
         int countMonster = sizeBoard * sizeBoard - sizeBoard - 5;
         Random r = new Random();
@@ -52,9 +49,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String answer = sc.nextLine();
         System.out.println("Ваш ответ:\t" + answer);
-
-
-
 
         switch (answer) {
             case "ДА" -> {
