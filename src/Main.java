@@ -45,7 +45,6 @@ public class Main {
 
         switch (answer) {
             case "ДА" -> {
-//
                 System.out.println("Выбери сложность игры(от 1 до 5):");
                 int difficultGame = sc.nextInt();
                 System.out.println("Выбранная сложность:\t" + difficultGame);
@@ -81,7 +80,6 @@ public class Main {
                                 personX = x;
                                 personY = y;
 
-
                             } else {
                                 personLive--;
                             }
@@ -105,11 +103,11 @@ public class Main {
 
     static boolean taskMonster(int difficultGame) {
         if (difficultGame == 1) {
-            Random r = new Random();
-            int x = r.nextInt(100);
-            int y = r.nextInt(100);
-            int trueAnswer = x + y;
-            System.out.println("Реши пример: " + x + " + " + y + " = ?");
+            Random random = new Random();
+            int a = random.nextInt(100);
+            int b = random.nextInt(100);
+            int trueAnswer = a + b;
+            System.out.println("Реши пример: " + a + " + " + b + " = ?");
             Scanner sc = new Scanner(System.in);
             int ans = sc.nextInt();
             if (trueAnswer == ans) {
@@ -117,9 +115,9 @@ public class Main {
                 return true;
             }
             System.out.println("Ты проиграл эту битву!");
-            //
         } else {
-//            //тут можно вставить игру быки-коровы, но я не успеваю..
+            //допишем потом здесь еще игру, а пока пусть наш игрок проигрывает по умолчанию
+            return false;
         }
         return false;
     }
