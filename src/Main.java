@@ -3,16 +3,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        String person = "\uD83E\uDDD9\u200D";
-//        int personLive = 3;
-
-//        String monster = "\uD83E\uDDDF\u200D";
         String castle = "\uD83C\uDFF0";
         int sizeBoard = 5;
-//        int personX = sizeBoard;
-//        int personY = 1;
-        Person person = new Person(sizeBoard);
 
+        Person person = new Person(sizeBoard);
 
         int step = 0;
 
@@ -22,7 +16,6 @@ public class Main {
                 board[y][x] = "  ";
             }
         }
-
 
         int count_monster = sizeBoard * sizeBoard - sizeBoard - 5;
         Random r = new Random();
