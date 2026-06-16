@@ -4,9 +4,6 @@ public class Main {
     public static void main(String[] args) {
         String person = "\uD83E\uDDD9\u200D";
         int personLive = 3;
-        /* здесь необходимо рассказать про переполнение и про другие типы данных
-            int personLive = 2147483649; // мало ли кто-то захочет сделать ооочень много жизней
-         */
 
         String monster = "\uD83E\uDDDF\u200D";
         int sizeBoard = 3;
@@ -14,7 +11,7 @@ public class Main {
         int personY = 3;
 
         int step = 0;
-        // \n, \t - как спец символ(упомянуть)
+      
         String gamingField = "+ —— + —— + —— +\n"
                 + "|    |    | \uD83C\uDFE0 |\n"
                 + "+ —— + —— + —— +\n"
@@ -71,12 +68,10 @@ public class Main {
                 System.out.println("Выбери сложность игры(от 1 до 5):");
                 int difficultGame = sc.nextInt();
                 System.out.println("Выбранная сложность:\t" + difficultGame);
-//                System.out.println("Сколько жизней будет у персонажа?");
-//            personLive = sc.nextInt(); // здесь необходимо рассказать о возможных ошибках(неверный тип, переполнение - еще раз и тд)
 
                 System.out.println(gamingField);
                 System.out.println("Количество жизней:\t" + personLive + "\n");
-                System.out.println("Введите куда будет ходить персонаж(ход возможен только по вертикали и горизонтали на одну клетку;" +
+                System.out.println("Введите куда будет ходить персонаж (ход возможен только по вертикали и горизонтали на одну клетку)" +
                         "\nКоординаты персонажа - (x: " + personX + ", y: " + personY + "))");
                 int x = sc.nextInt();
                 int y = sc.nextInt();
