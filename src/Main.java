@@ -56,7 +56,7 @@ public class Main {
 
                     outputBoard(board, personLive);
 
-                    System.out.println("Введите куда будет ходить персонаж(ход возможен только по вертикали и горизонтали на одну клетку;" +
+                    System.out.println("Введите куда будет ходить персонаж (ход возможен только по вертикали и горизонтали на одну клетку)" +
                             "\nКоординаты персонажа - (x: " + personX + ", y: " + personY + "))");
                     int x = sc.nextInt();
                     int y = sc.nextInt();
