@@ -18,7 +18,7 @@ public class Main {
         String leftBlock = "| ";
         String rightBlock = "|";
         String wall = "+ —— + —— + —— +";
-        // \n, \t - как спец символ(упомянуть)
+        
         String gamingField = "+ —— + —— + —— +\n"
                 + "|    |    | \uD83C\uDFE0 |\n"
                 + "+ —— + —— + —— +\n"
@@ -65,17 +65,6 @@ public class Main {
 
                 while (true) {
                     board[personY - 1][personX - 1] = person;
-//                    System.out.println(output_str);
-//                    for (int y = 0; y < sizeBoard; y++) {
-//                        System.out.println(wall);
-//                        for (int x = 0; x < sizeBoard; x++) {
-////                            if (personY - 1 == y && personX - 1 == x) System.out.print(leftBlock + person + " ");
-////                            else System.out.print(leftBlock + "   ");
-//                            System.out.print(leftBlock + board[y][x] + " ");
-//                        }
-//                        System.out.println(rightBlock);
-//                    }
-//                    System.out.println(wall);
 
                     for (String[] raw : board) {
                         System.out.println(wall);
@@ -89,7 +78,7 @@ public class Main {
 
                     System.out.println("Количество жизней:\t" + personLive + "\n");
 
-                    System.out.println("Введите куда будет ходить персонаж(ход возможен только по вертикали и горизонтали на одну клетку;" +
+                    System.out.println("Введите куда будет ходить персонаж (ход возможен только по вертикали и горизонтали на одну клетку)" +
                             "\nКоординаты персонажа - (x: " + personX + ", y: " + personY + "))");
                     int x = sc.nextInt();
                     int y = sc.nextInt();
