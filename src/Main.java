@@ -58,7 +58,7 @@ public class Main {
                 while (true) {
                     board[person.getY() - 1][person.getX() - 1] = person.getImage();
                     outputBoard(board, person.getLive());
-                    System.out.println("Введите куда будет ходить персонаж(ход возможен только по вертикали и горизонтали на одну клетку;" +
+                    System.out.println("Введите куда будет ходить персонаж (ход возможен только по вертикали и горизонтали на одну клетку)" +
                             "\nКоординаты персонажа - (x: " + person.getX() + ", y: " + person.getY() + "))");
                     int x = sc.nextInt();
                     int y = sc.nextInt();
