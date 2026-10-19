@@ -129,8 +129,6 @@ public class Main {
 
         for (String[] row : board) {
             System.out.println(wall);
-            for (String column : row) {
-                System.out.print(leftBlock + column + " ");
             for (String col : row) {
                 System.out.print(leftBlock + col + " ");
             }
